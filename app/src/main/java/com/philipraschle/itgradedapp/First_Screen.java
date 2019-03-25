@@ -21,6 +21,7 @@ public class First_Screen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first__screen);
 
+        //Declare these variables earlier.
         button = findViewById(R.id.button);
         button.setEnabled(false);
         enteryourName = findViewById(R.id.enteryourName);
