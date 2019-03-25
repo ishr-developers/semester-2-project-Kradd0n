@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IT Graded App</string>
+    <string name="News_button">News</string>
+    <string name="enteryourName_button">Enter your Name</string>
+    <string name="App_Name">FNSC</string>
+    <string name="searchButton">ImageButton</string>
+</resources>
