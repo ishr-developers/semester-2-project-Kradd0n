@@ -32,6 +32,8 @@ public class DataDownloader extends AsyncTaskLoader<String> {
             connection.setRequestMethod("POST");
 
             //TODO: Show how to add token without posting it to GITHUB
+
+            //TODO: Add correct request key,value pair for Fortnite.
             //  connection.setRequestProperty("X-Auth-Token", "WRONG TOKEN a5c3635f83ddc36" );
             connection.connect();
 
