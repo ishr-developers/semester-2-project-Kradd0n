@@ -7,6 +7,8 @@
     android:background="@drawable/potential_background_image_4"
     tools:context=".First_Screen">
 
+    <!--TODO: You need to add your Spinner -->
+    <!--Don't forget to set the constraints on your spinner. -->
     <TextView
         android:id="@+id/AppName"
         android:layout_width="wrap_content"

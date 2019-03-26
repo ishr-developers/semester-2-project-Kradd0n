@@ -2,8 +2,8 @@ package com.philipraschle.itgradedapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
@@ -44,6 +44,7 @@ public class First_Screen extends AppCompatActivity {
             }
         });
 
+        //Don't remove this just yet.
         ImageButton buttonOpenWebView = findViewById(R.id.button);
         buttonOpenWebView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,17 +53,34 @@ public class First_Screen extends AppCompatActivity {
             }
         });
 
+
+        //TODO: Leave this bit alone.
         Button News = findViewById(R.id.News);
         News.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openwebView("https://www.epicgames.com/fortnite/de/news");
+                openwebView("https://www.epicgames.com/fortnite/de/news"); //TODO: Delete this line.
+                //TODO: Generate the proper url when user clicks on the news button.
+                //The stub of a function is declared for you.
+
+                //TODO: Declare an intent and pass the url to it.
+
+                //TODO: Launch the new Activity with the intent.
             }
         });
     }
+
+
     public void openwebView(String url){
         Intent intent = new Intent(this, webView.class);
         intent.putExtra("url", url);
         startActivity(intent);
+    }
+
+
+    public String generateSearchUrl() {
+        //TODO: Use the URI Builder class and the data from the spinner and EditText to generate a Uri.
+
+        return null;
     }
 }

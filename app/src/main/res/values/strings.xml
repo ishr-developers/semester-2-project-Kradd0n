@@ -4,4 +4,7 @@
     <string name="enteryourName_button">Enter your Name</string>
     <string name="App_Name">FNSC</string>
     <string name="searchButton">ImageButton</string>
+
+
+    <!--TODO: You'll need an array to hold your spinner objects. -->
 </resources>
