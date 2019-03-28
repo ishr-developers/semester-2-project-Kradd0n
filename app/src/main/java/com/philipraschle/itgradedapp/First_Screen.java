@@ -7,12 +7,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.Spinner;
+import android.widget.Toast;
+
 //Testing comment.
 //I made a change.
-public class First_Screen extends AppCompatActivity {
+public class First_Screen extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
     private EditText enteryourName;
     private ImageButton button;
     @SuppressLint("CutPasteId")
@@ -20,6 +25,12 @@ public class First_Screen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first__screen);
+
+        Spinner platformspinner = findViewById(R.id.platformspinner);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.platformarray, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        platformspinner.setAdapter(adapter);
+        platformspinner.setOnItemSelectedListener(this);
 
         //Declare these variables earlier.
         button = findViewById(R.id.button);
@@ -82,5 +93,16 @@ public class First_Screen extends AppCompatActivity {
         //TODO: Use the URI Builder class and the data from the spinner and EditText to generate a Uri.
 
         return null;
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+        String text = parent .getItemAtPosition(position).toString();
+        Toast.makeText(parent.getContext(),text,Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
+
     }
 }

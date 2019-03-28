@@ -5,6 +5,10 @@
     <string name="App_Name">FNSC</string>
     <string name="searchButton">ImageButton</string>
 
-
+<string-array name="platformarray">
+    <item>xbl</item>
+    <item>psn</item>
+    <item>pc</item>
+</string-array>
     <!--TODO: You'll need an array to hold your spinner objects. -->
 </resources>
