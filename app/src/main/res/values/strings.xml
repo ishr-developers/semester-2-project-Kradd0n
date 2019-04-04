@@ -10,5 +10,5 @@
     <item>psn</item>
     <item>pc</item>
 </string-array>
-    <!--TODO: You'll need an array to hold your spinner objects. -->
+
 </resources>

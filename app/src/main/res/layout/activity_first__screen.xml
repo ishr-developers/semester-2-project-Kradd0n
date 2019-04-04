@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/potential_background_image_4"
+    android:background="@drawable/kaktus"
     tools:context=".First_Screen">
 
-    <!--TODO: You need to add your Spinner -->
     <!--Don't forget to set the constraints on your spinner. -->
     <TextView
         android:id="@+id/AppName"
@@ -67,8 +66,8 @@
 
     <Spinner
         android:id="@+id/platformspinner"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="41dp"
+        android:layout_height="27dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"

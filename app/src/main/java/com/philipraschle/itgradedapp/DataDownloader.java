@@ -1,4 +1,4 @@
-package com.example.mohammedthabet.realmadrid;
+package com.philipraschle.itgradedapp;
 
 import android.content.AsyncTaskLoader;
 import android.content.Context;

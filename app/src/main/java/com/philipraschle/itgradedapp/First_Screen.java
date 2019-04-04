@@ -2,6 +2,7 @@ package com.philipraschle.itgradedapp;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
@@ -70,9 +71,11 @@ public class First_Screen extends AppCompatActivity implements AdapterView.OnIte
         News.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openwebView("https://www.epicgames.com/fortnite/de/news"); //TODO: Delete this line.
                 //TODO: Generate the proper url when user clicks on the news button.
                 //The stub of a function is declared for you.
+                Uri.Builder builder = new Uri.Builder();
+                builder.scheme("https");
+                builder.authority("")
 
                 //TODO: Declare an intent and pass the url to it.
 
