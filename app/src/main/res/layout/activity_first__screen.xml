@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/kaktus"
+    android:background="@drawable/grey_background"
     tools:context=".First_Screen">
 
     <!--Don't forget to set the constraints on your spinner. -->
@@ -15,6 +15,7 @@
         android:layout_marginTop="40dp"
         android:text="@string/App_Name"
         android:textAllCaps="true"
+        android:textColor="#A72FCF"
         android:textSize="36sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,6 +30,7 @@
         android:ems="10"
         android:hint="@string/enteryourName_button"
         android:inputType="textPersonName"
+        android:textColor="#A72FCF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,6 +43,7 @@
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:background="#A72FCF"
         android:text="@string/News_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -49,20 +52,21 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="224dp"
+        android:background="#A72FCF"
+        android:contentDescription="@string/searchButton"
         android:src="@android:drawable/ic_menu_search"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toEndOf="@+id/enteryourName"
-        app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/searchButton" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/platformspinner"

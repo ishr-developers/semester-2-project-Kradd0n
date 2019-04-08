@@ -75,7 +75,7 @@ public class First_Screen extends AppCompatActivity implements AdapterView.OnIte
                 //The stub of a function is declared for you.
                 Uri.Builder builder = new Uri.Builder();
                 builder.scheme("https");
-                builder.authority("")
+                builder.authority("fortnitetracker.com");
 
                 //TODO: Declare an intent and pass the url to it.
 
