@@ -16,17 +16,19 @@ import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-//Testing comment.
-//I made a change.
+
 public class First_Screen extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
     private EditText enteryourName;
     private ImageButton button;
     @SuppressLint("CutPasteId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first__screen);
 
+        //Setting up the Spinner
         Spinner platformspinner = findViewById(R.id.platformspinner);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.platformarray, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -36,6 +38,8 @@ public class First_Screen extends AppCompatActivity implements AdapterView.OnIte
         //Declare these variables earlier.
         button = findViewById(R.id.button);
         button.setEnabled(false);
+
+
         enteryourName = findViewById(R.id.enteryourName);
         enteryourName.addTextChangedListener(new TextWatcher() {
             @Override
@@ -72,10 +76,7 @@ public class First_Screen extends AppCompatActivity implements AdapterView.OnIte
             @Override
             public void onClick(View v) {
                 //TODO: Generate the proper url when user clicks on the news button.
-                //The stub of a function is declared for you.
-                Uri.Builder builder = new Uri.Builder();
-                builder.scheme("https");
-                builder.authority("fortnitetracker.com");
+                String url = generateSearchUrl();
 
                 //TODO: Declare an intent and pass the url to it.
 
@@ -95,7 +96,18 @@ public class First_Screen extends AppCompatActivity implements AdapterView.OnIte
     public String generateSearchUrl() {
         //TODO: Use the URI Builder class and the data from the spinner and EditText to generate a Uri.
 
-        return null;
+        //This is a good start!
+        Uri.Builder builder = new Uri.Builder();
+        builder.scheme("https");
+        builder.authority("fortnitetracker.com");
+
+
+        //TODO: Make sure you add the paths needed.
+
+        //TODO: You also need to read the selected value from the spinner and use it to build the URL.
+
+        return builder.build().toString();
+        ;
     }
 
     @Override
