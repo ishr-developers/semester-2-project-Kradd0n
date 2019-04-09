@@ -107,7 +107,7 @@ public class First_Screen extends AppCompatActivity implements AdapterView.OnIte
         //TODO: You also need to read the selected value from the spinner and use it to build the URL.
 
         return builder.build().toString();
-        ;
+        
     }
 
     @Override
