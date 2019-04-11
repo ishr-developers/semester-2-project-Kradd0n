@@ -29,7 +29,7 @@ public class DataDownloader extends AsyncTaskLoader<String> {
         try {
             URL url = new URL(urlString);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("POST");
+            //connection.setRequestMethod("POST");
 
             connection.setRequestProperty("TRN-Api-Key", getContext().getResources().getString(R.string.fortnite_api_key));
             connection.connect();
