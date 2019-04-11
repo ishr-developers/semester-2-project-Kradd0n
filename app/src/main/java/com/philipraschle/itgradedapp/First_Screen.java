@@ -75,12 +75,11 @@ public class First_Screen extends AppCompatActivity implements AdapterView.OnIte
         News.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //TODO: Generate the proper url when user clicks on the news button.
-                String url = generateSearchUrl();
+              Intent intent = new Intent(getApplicationContext(), NewsActivity.class);
+              startActivity(intent);
 
-                //TODO: Declare an intent and pass the url to it.
 
-                //TODO: Launch the new Activity with the intent.
+
             }
         });
     }
