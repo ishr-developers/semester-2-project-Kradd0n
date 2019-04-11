@@ -79,7 +79,6 @@ public class First_Screen extends AppCompatActivity implements AdapterView.OnIte
                 startActivity(intent);
 
 
-
             }
         });
     }
