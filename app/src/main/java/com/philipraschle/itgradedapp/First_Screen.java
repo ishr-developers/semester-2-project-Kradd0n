@@ -78,6 +78,8 @@ public class First_Screen extends AppCompatActivity implements AdapterView.OnIte
                 Intent intent = new Intent(getApplicationContext(), NewsActivity.class);
                 startActivity(intent);
 
+
+
             }
         });
     }
