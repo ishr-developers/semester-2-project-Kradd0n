@@ -34,6 +34,7 @@ public class NewsActivity extends AppCompatActivity implements LoaderManager.Loa
     @Override
     public void onLoadFinished(@NonNull Loader<String> loader, String data) {
         String jsonResponse = data;
+        String tempData = data;
 
 
     }
