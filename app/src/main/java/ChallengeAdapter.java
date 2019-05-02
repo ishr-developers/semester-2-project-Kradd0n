@@ -6,6 +6,8 @@ import android.view.ViewGroup;
 
 public class ChallengeAdapter extends RecyclerView.Adapter<ChallengeAdapter.ChallengeViewHolder> {
 
+    public ChallengeAdapter() {
+    }
 
     @NonNull
     @Override
